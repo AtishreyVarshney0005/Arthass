@@ -300,6 +300,23 @@ button { font: inherit; cursor: pointer; }
 .fb-inner { display: flex; justify-content: space-between; gap: 12px; padding: 14px 0; font-size: 10.5px; color: #dcdcf0; flex-wrap: wrap; }
 .legal { display: flex; gap: 14px; }
 
+.whatsapp-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border-radius: 50%;
+  background: transparent;
+  transition: transform .2s ease, filter .2s ease;
+}
+.whatsapp-button img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.whatsapp-button:hover { transform: translateY(-3px); filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .28)); }
+.whatsapp-button:focus-visible { outline: 3px solid #bd873a; outline-offset: 3px; }
+
 /* Responsive */
 @media (max-width: 980px) {
   .hero-inner { grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr); gap: 26px; }
@@ -618,6 +635,7 @@ body { background: #fffdfa; }
   .process-card-top { margin-bottom: 18px; }
   .cta-banner { padding-block: 34px; }
   .footer-grid { padding-block: 38px 30px; }
+  .whatsapp-button { right: 16px; bottom: 16px; width: 54px; height: 54px; }
 }
 
 /* Scroll reveals activate only after the observer is ready, so content stays visible without JavaScript. */
@@ -694,7 +712,7 @@ body { background: #fffdfa; }
 }
 .hero-copy,
 .hero-visual {
-  animation: hero-fade-brighten 5s cubic-bezier(.16, 1, .3, 1) both;
+  animation: hero-fade-brighten 10s cubic-bezier(.16, 1, .3, 1) both;
 }
 .hero-visual { animation-delay: 180ms; }
 @keyframes hero-fade-brighten {
@@ -887,6 +905,97 @@ body { background: #fffdfa; }
   .work-cta { flex-direction: column; align-items: stretch; gap: 14px; margin-top: 20px; padding: 18px; }
   .work-cta .btn { width: 100%; }
 }
+
+@media (max-width: 640px) {
+  html { scroll-padding-top: 76px; }
+  .container, .container.narrow { width: calc(100% - 32px); }
+  .hero { min-height: 0; padding: 112px 0 44px; }
+  .hero-inner, .hero-copy, .hero-visual,
+  .contact, .form, .work-grid, .process-steps, .footer-grid { min-width: 0; }
+  .hero h1 { font-size: clamp(32px, 9vw, 42px); overflow-wrap: anywhere; }
+  .hero p, .sub { font-size: 14px; line-height: 1.7; }
+  .hero-actions { align-items: stretch; }
+  .hero-actions .btn { width: 100%; min-height: 48px; padding-inline: 16px; }
+  .section { padding-block: 56px 40px; }
+  .section-tight { padding-block: 44px 32px; }
+  .title-block { margin-bottom: 22px; }
+  .section-title { font-size: clamp(24px, 6vw, 30px); }
+  .grid-3, .grid-4, .steps, .footer-grid, .form .two { grid-template-columns: minmax(0, 1fr); }
+  .grid > *, .steps > *, .work-grid > *, .process-steps > * { min-width: 0; }
+  .service { min-height: 0; }
+  .work-grid { gap: 16px; }
+  .work-img { height: auto; aspect-ratio: 1.9; }
+  .work-cta { flex-direction: column; align-items: stretch; gap: 14px; }
+  .work-cta .btn, .cta-inner > .btn { width: 100%; min-height: 48px; white-space: normal; }
+  .t-row { flex-wrap: wrap; justify-content: center; }
+  .t-card { order: 1; flex: 0 0 100%; }
+  .t-row .circle-btn { order: 2; width: 44px; height: 44px; }
+  .cta-banner { padding-block: 36px; }
+  .cta-inner { gap: 20px; }
+  .contact { gap: 28px; }
+  .form { padding: 20px 16px; }
+  .form label, .form input, .form select, .form textarea { min-width: 0; }
+  .form input, .form select, .form textarea { width: 100%; min-height: 48px; font-size: 16px; }
+  .form textarea { min-height: 120px; }
+  .form .btn { width: 100%; min-height: 48px; white-space: normal; }
+  .footer-grid { gap: 28px; }
+  .footer .socials { gap: 10px; }
+  .footer .soc { width: 44px; height: 44px; }
+  .fb-inner { gap: 10px; }
+  .legal { gap: 10px 16px; }
+}
+
+@media (max-width: 380px) {
+  .container, .container.narrow { width: calc(100% - 28px); }
+  .header-inner { width: calc(100% - 28px); }
+  .logo { width: 136px; height: 45px; }
+  .hero { padding-top: 104px; }
+  .hero-visual { min-height: 320px; }
+  .visual-card { padding: 14px 12px; }
+  .growth-map { height: 210px; }
+  .visual-note { max-width: 100%; right: 0; font-size: 9px; }
+  .form { padding-inline: 14px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .card-lg:active,
+  .service:active,
+  .work-card:active,
+  .process-card:active,
+  .btn:active {
+    animation: touch-press 360ms ease-out;
+  }
+  .service:active .icon-box {
+    animation: service-icon-swing 360ms ease-out;
+  }
+}
+
+@keyframes touch-press {
+  0% { transform: scale(.97); }
+  65% { transform: scale(1.015); }
+  100% { transform: scale(1); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .work-card-arrow { transition: none; }
+  .card-lg:active,
+  .service:active,
+  .work-card:active,
+  .process-card:active,
+  .btn:active,
+  .service:active .icon-box { animation: none; }
 }
+
+#services, #faqs, #contact,
+.card, .work-card, .form, .cta-banner, .work-cta {
+  background: transparent;
+}
+.card-lg.tone-violet,
+.card-lg.tone-red,
+.card-lg.tone-green,
+.service.tone-violet,
+.service.tone-red,
+.service.tone-green {
+  background: transparent;
+}
+.btn-outline { background: transparent; }
