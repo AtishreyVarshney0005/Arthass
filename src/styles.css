@@ -958,6 +958,13 @@ body { background: #fffdfa; }
 }
 
 @media (hover: none) and (pointer: coarse) {
+  .card-lg:hover,
+  .card-lg:focus-within {
+    animation: none;
+    rotate: none;
+    scale: none;
+  }
+
   .card-lg:active,
   .service:active,
   .work-card:active,
@@ -967,6 +974,13 @@ body { background: #fffdfa; }
   }
   .service:active .icon-box {
     animation: service-icon-swing 360ms ease-out;
+  }
+}
+
+@media (max-width: 640px) {
+  .has-scroll-reveal [data-reveal="left"],
+  .has-scroll-reveal [data-reveal="right"] {
+    translate: 0 28px;
   }
 }
 
