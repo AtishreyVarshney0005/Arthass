@@ -1,0 +1,155 @@
+// All copy comes from "ARTHASS Full Website Copy-Paste Content Pack" (v1.0).
+// Keep every string editable here (or later move to a CMS / API).
+
+export const site = {
+  name: "ARTHASS",
+  descriptor: "Digital Growth & Creative",
+  tagline: "Strategy. Production. Performance.",
+  footerLine: "For a smarter, stronger digital presence.",
+  primaryCta: { label: "Book a Growth Consultation", href: "#contact" },
+  social: {
+    facebook: "https://www.facebook.com/share/1VNBVPMx3A/",
+    instagram: "https://www.instagram.com/reel/Def9ShYz0dZ/?mdxt=MTJ5M2s5eGVhZm5lZA==",
+    linkedin: "https://www.linkedin.com/company/arthass/",
+    youtube: "#", // [OFFICIAL YOUTUBE URL]
+  },
+  contact: {
+    phone: "+91 9149104660",
+    email: "devbratsingh181@gmail.com",
+    whatsapp: "", // [WHATSAPP LINK]
+    serviceArea: "Mathura and Agra; remote projects considered where suitable.",
+    hours: "", // [CONFIRMED BUSINESS HOURS]
+  },
+};
+
+export const nav = [
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "About", href: "#approach" },
+  { label: "Our Work", href: "#work" },
+  { label: "Resources", href: "#faqs" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const hero = {
+  eyebrow: "STRATEGY • PRODUCTION • PERFORMANCE",
+  titleLead: "Digital growth built",
+  titleLine2: "around",
+  titleAccent: "your business goals.",
+  body: "ARTHASS brings strategy, creative production and performance marketing together to help institutions and businesses communicate clearly, reach relevant audiences and build a more measurable path from visibility to enquiry.",
+  primaryCta: "Book a Growth Consultation",
+  secondaryCta: "Explore Our Work",
+  badges: ["Build Visibility", "Generate Demand", "Drive Growth"],
+};
+
+export const approach = {
+  eyebrow: "The ARTHASS approach",
+  heading: "One connected system. Three growth engines.",
+  items: [
+    {
+      icon: "lightbulb",
+      tone: "violet",
+      title: "Strategy",
+      text: "We start by understanding your business, audience, offer and growth challenge. The result is a clearer direction, focused priorities and a plan tied to meaningful business objectives.",
+    },
+    {
+      icon: "play",
+      tone: "red",
+      title: "Production",
+      text: "We turn strategy into communication people can see, understand and remember—from photography and video to social content, campaign creative and digital experiences.",
+    },
+    {
+      icon: "chart",
+      tone: "green",
+      title: "Performance",
+      text: "We help distribute the right message through suitable channels, measure what happens next and use the evidence to improve the work over time.",
+    },
+  ],
+};
+
+export const services = {
+  heading: "Our Services",
+  sub: "The right marketing mix depends on your audience, offer, resources and business objective. ARTHASS connects strategic planning, creative execution and performance measurement so each activity has a clear role.",
+  items: [
+    { icon: "compass", tone: "violet", title: "Growth Strategy", text: "Build a clearer plan for your marketing: audience, message, channel priorities and measurable objectives.", href: "#contact" },
+    { icon: "camera", tone: "red", title: "Creative Production", text: "Photography, video, reels, campaign assets and brand content that tell your story.", href: "#contact" },
+    { icon: "megaphone", tone: "green", title: "Performance Marketing", text: "Plan, launch and improve paid campaigns with clear objectives and appropriate tracking.", href: "#contact" },
+    { icon: "search", tone: "red", title: "SEO & Local Search", text: "Help relevant audiences find your business through technical foundations and useful content.", href: "#contact" },
+    { icon: "globe", tone: "violet", title: "Websites & Landing Pages", text: "A clear digital destination that explains your offer and guides visitors to a useful next step.", href: "#contact" },
+    { icon: "share", tone: "green", title: "Social Content Systems", text: "Move from random posting to a purposeful content system with audience-led themes.", href: "#contact" },
+    { icon: "funnel", tone: "violet", title: "Lead Generation", text: "Make enquiries easier to capture, route and review through forms, tracking and follow-up.", href: "#contact" },
+  ],
+};
+
+// The content pack says: do NOT invent client names, case studies or results.
+// So this section shows the sectors ARTHASS serves. When approved projects exist,
+// pass them to <Work projects={...} /> in the same shape (title, tags, image).
+export const industries = {
+  heading: "Our Work",
+  sub: "A closer look at the sectors we support—and the strategy, creative and digital capabilities we can bring to each.",
+  cta: "Discuss a project",
+  items: [
+    { title: "Education Growth Marketing", tags: "Strategy | Creative | Digital", image: "", scene: "education", tone: "violet" },
+    { title: "Hospitality & Tourism", tags: "Strategy | Creative | Marketing", image: "", scene: "hospitality", tone: "green" },
+    { title: "Real Estate Marketing", tags: "Design | Development | Marketing", image: "", scene: "real-estate", tone: "red" },
+  ],
+};
+
+// Empty on purpose: the pack forbids invented testimonials.
+// Add approved ones like: { name, role, quote, photo }
+export const testimonials = [];
+
+export const process = {
+  heading: "How we work",
+  sub: "A clear, collaborative process keeps the work focused—from understanding your goals to learning what to improve next.",
+  steps: [
+    { icon: "search", title: "Discover", text: "We learn about your organisation, audience, goals and current challenges." },
+    { icon: "compass", title: "Plan", text: "Together, we agree priorities, messaging, channels, deliverables and success measures." },
+    { icon: "camera", title: "Create", text: "We produce the content and digital assets shaped by the agreed plan." },
+    { icon: "megaphone", title: "Launch", text: "We publish or activate approved work across the selected channels." },
+    { icon: "chart", title: "Measure", text: "We review relevant performance signals and the quality of enquiries." },
+    { icon: "trend", title: "Improve", text: "We use what we learn to refine the creative, targeting and next cycle." },
+  ],
+};
+
+export const faqs = {
+  heading: "Common questions",
+  items: [
+    { q: "What does ARTHASS do?", a: "ARTHASS connects marketing strategy, creative production and performance-led digital marketing. Depending on the agreed scope, this can include content, photo/video production, social media, SEO, paid campaigns, websites and enquiry workflows." },
+    { q: "Which industries does ARTHASS serve?", a: "Our initial focus is education, especially colleges and universities. We also plan to support selected businesses in hospitality and tourism, real estate, and other sectors where our capabilities match the requirement." },
+    { q: "Does ARTHASS guarantee leads or admissions?", a: "No responsible marketing partner can guarantee admissions or sales independently of market conditions, institutional reputation, pricing, offer quality, follow-up and other factors. We focus on clear strategy, agreed deliverables, tracking and continuous improvement." },
+    { q: "Where does ARTHASS operate?", a: "Our initial focus is Mathura and Agra, with expansion towards NCR when appropriate. Remote collaboration may be possible depending on the project scope." },
+    { q: "How can we start?", a: "Use the enquiry form to share your organisation, location, objective and current challenge. We can then determine whether a consultation is the right next step." },
+  ],
+};
+
+export const cta = {
+  heading: "Ready to Take Your Digital Growth to the Next Level?",
+  body: "Tell us what growth needs to look like for your business. Share your current challenge and the outcome you want to improve.",
+  button: "Book a Growth Consultation",
+};
+
+export const contactForm = {
+  heading: "Tell us what you want your marketing to achieve.",
+  intro: "Share a little about your organisation, your current challenge and the outcome you want to improve. We will review the context and determine whether there is a sensible next step.",
+  sectors: ["Education", "Hospitality & Tourism", "Real Estate", "Other"],
+  submit: "Send Enquiry",
+  privacy: "Please share only information needed to understand your enquiry. Do not submit sensitive personal information or confidential records through this form.",
+  draft: "Your email app should open with your enquiry. Review it and press Send there; the enquiry has not been sent yet.",
+  error: "This form cannot send enquiries yet because a receiving email address has not been configured. No information was sent.",
+};
+
+export const footer = {
+  quickLinks: [
+    { label: "Home", href: "#home" },
+    { label: "Services", href: "#services" },
+    { label: "About", href: "#approach" },
+    { label: "Our Work", href: "#work" },
+    { label: "Contact", href: "#contact" },
+  ],
+  services: ["Growth Strategy", "Creative Production", "Performance Marketing", "SEO & Local Search", "Websites & Landing Pages", "Social Content", "Lead Generation"],
+  legal: [
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms & Conditions", href: "#" },
+  ],
+};
