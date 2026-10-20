@@ -306,14 +306,14 @@ button { font: inherit; cursor: pointer; }
   bottom: 24px;
   z-index: 1000;
   display: grid;
-  width: 58px;
-  height: 58px;
+  width: 68px;
+  height: 68px;
   place-items: center;
   border-radius: 50%;
   background: transparent;
   transition: transform .2s ease, filter .2s ease;
 }
-.whatsapp-button img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.whatsapp-button img { display: block; width: 58px; height: 58px; object-fit: contain; }
 .whatsapp-button:hover { transform: translateY(-3px); filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .28)); }
 .whatsapp-button:focus-visible { outline: 3px solid #bd873a; outline-offset: 3px; }
 
@@ -635,7 +635,8 @@ body { background: #fffdfa; }
   .process-card-top { margin-bottom: 18px; }
   .cta-banner { padding-block: 34px; }
   .footer-grid { padding-block: 38px 30px; }
-  .whatsapp-button { right: 16px; bottom: 16px; width: 54px; height: 54px; }
+  .whatsapp-button { right: 16px; bottom: 16px; width: 62px; height: 62px; }
+  .whatsapp-button img { width: 52px; height: 52px; }
 }
 
 /* Scroll reveals activate only after the observer is ready, so content stays visible without JavaScript. */

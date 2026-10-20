@@ -44,6 +44,7 @@ export default function Hero() {
             </div>
             <div className="visual-foot"><span>Clear direction</span><span>Thoughtful creative</span><span>Measured progress</span></div>
           </div>
+          <br/><br/>
           <div className="visual-note"><span className="note-spark">✦</span> Strategy-led. Built around your goals.</div>
         </div>
       </div>
