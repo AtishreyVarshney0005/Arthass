@@ -119,7 +119,6 @@ export default function Work({ projects = industries.items }) {
                   aria-label={`${p.title} industry illustration`}
                 >
                   {!p.image && <IndustryArtwork scene={p.scene} />}
-                  <span className="work-label">Industry focus</span>
                   <span className="work-image-index">{String(index + 1).padStart(2, "0")}</span>
                 </div>
                 <div className="work-meta">

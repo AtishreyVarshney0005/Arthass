@@ -39,6 +39,21 @@ export default function Footer() {
           )}
         </div>
       </div>
+      <section className="container footer-education" aria-labelledby="footer-education-heading">
+        <div>
+          <span className="footer-education-eyebrow">{footer.education.eyebrow}</span>
+          <h3 id="footer-education-heading">{footer.education.heading}</h3>
+          <p>{footer.education.text}</p>
+        </div>
+        <ul className="footer-education-links">
+          {footer.education.links.map((item) => (
+            <li key={item}><a href="#contact">{item}</a></li>
+          ))}
+        </ul>
+        <a className="footer-education-cta" href="#contact">
+          {footer.education.cta} <Icon name="arrow" size={15} />
+        </a>
+      </section>
       <div className="footer-bottom">
         <div className="container fb-inner">
           <span>© {new Date().getFullYear()} {site.name}. All Rights Reserved.</span>

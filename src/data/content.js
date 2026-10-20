@@ -36,7 +36,7 @@ export const hero = {
   titleLead: "Digital growth for",
   titleLine2: "schools &",
   titleAccent: "colleges.",
-  body: "ARTHASS connects strategy, creative production and performance marketing to help educational institutions strengthen their digital presence, communicate their value and attract relevant audiences. We build connected marketing systems around your goals, not disconnected activities.",
+  body: "ARTHASS connects strategy, creative production and performance marketing to help educational institutions strengthen their digital presence, communicate their value and attract relevant audiences. We build connected marketing systems around your goals not disconnected activities.",
   primaryCta: "Book a Growth Consultation",
   secondaryCta: "Explore Our Work",
   badges: ["Build Visibility", "Generate Demand", "Drive Growth"],
@@ -68,8 +68,8 @@ export const approach = {
 };
 
 export const services = {
-  heading: "Our Services",
-  sub: "The right marketing mix depends on your audience, offer, resources and business objective. ARTHASS connects strategic planning, creative execution and performance measurement so each activity has a clear role.",
+  heading: "Everything you need to grow digitally",
+  sub: "Explore our complete range of strategy, development, advertising and creative services. Choose what you need, or let us connect the right mix around your goals.",
   items: [
     { icon: "compass", tone: "violet", title: "Growth Strategy", text: "Build a clearer plan for your marketing: audience, message, channel priorities and measurable objectives.", href: "#contact" },
     { icon: "camera", tone: "red", title: "Creative Production", text: "Photography, video, reels, campaign assets and brand content that tell your story.", href: "#contact" },
@@ -78,6 +78,11 @@ export const services = {
     { icon: "globe", tone: "violet", title: "Websites & Landing Pages", text: "A clear digital destination that explains your offer and guides visitors to a useful next step.", href: "#contact" },
     { icon: "share", tone: "green", title: "Social Content Systems", text: "Move from random posting to a purposeful content system with audience-led themes.", href: "#contact" },
     { icon: "funnel", tone: "violet", title: "Lead Generation", text: "Make enquiries easier to capture, route and review through forms, tracking and follow-up.", href: "#contact" },
+    { icon: "globe", tone: "green", title: "App Development", text: "Build mobile applications that make your services easier to access and use.", href: "#contact" },
+    { icon: "megaphone", tone: "red", title: "Google Ads", text: "Reach people actively searching for your products or services with targeted Google campaigns.", href: "#contact" },
+    { icon: "share", tone: "violet", title: "Meta Ads", text: "Run audience-focused campaigns across Facebook and Instagram to build awareness and generate enquiries.", href: "#contact" },
+    { icon: "play", tone: "green", title: "Video Production", text: "Create polished videos, reels and campaign content that bring your brand story to life.", href: "#contact" },
+    { icon: "camera", tone: "red", title: "AI Image Creation", text: "Generate original AI-assisted visuals for your brand, campaigns and social content.", href: "#contact" },
   ],
 };
 
@@ -89,9 +94,9 @@ export const industries = {
   sub: "Education is our primary focus, especially schools and colleges. We also support selected organisations in hospitality, tourism and real estate with relevant strategy, creative and digital capabilities.",
   cta: "Discuss a project",
   items: [
-    { title: "Education Growth Marketing", tags: "Strategy | Creative | Digital", image: "", scene: "education", tone: "violet" },
-    { title: "Hospitality & Tourism", tags: "Strategy | Creative | Marketing", image: "", scene: "hospitality", tone: "green" },
-    { title: "Real Estate Marketing", tags: "Design | Development | Marketing", image: "", scene: "real-estate", tone: "red" },
+    { title: "Education Growth Marketing", tags: "Strategy | Creative | Digital", image: "/industries/education.png", scene: "education", tone: "violet" },
+    { title: "Hospitality & Tourism", tags: "Strategy | Creative | Marketing", image: "/industries/hospitality.png", scene: "hospitality", tone: "green" },
+    { title: "Real Estate Marketing", tags: "Design | Development | Marketing", image: "/industries/real-estate.png", scene: "real-estate", tone: "red" },
   ],
 };
 
@@ -116,7 +121,7 @@ export const faqs = {
   heading: "Common questions",
   items: [
     { q: "What does ARTHASS do?", a: "ARTHASS connects marketing strategy, creative production and performance-led digital marketing. Depending on the agreed scope, this can include content, photo/video production, social media, SEO, paid campaigns, websites and enquiry workflows." },
-    { q: "Which industries does ARTHASS serve?", a: "Our primary focus is education, especially schools and colleges. We also support selected organisations in hospitality and tourism, real estate, and other sectors where our capabilities match the requirement." },
+    { q: "Can I combine multiple services?", a: "Yes. We can combine strategy, development, advertising and creative production into a connected plan, or work on a specific service based on your goals." },
     { q: "Does ARTHASS guarantee leads or admissions?", a: "No responsible marketing partner can guarantee admissions or sales independently of market conditions, institutional reputation, pricing, offer quality, follow-up and other factors. We focus on clear strategy, agreed deliverables, tracking and continuous improvement." },
     { q: "Where does ARTHASS operate?", a: "Our initial focus is Mathura and Agra, with expansion towards NCR when appropriate. Remote collaboration may be possible depending on the project scope." },
     { q: "How can we start?", a: "Use the enquiry form to share your organisation, location, objective and current challenge. We can then determine whether a consultation is the right next step." },
@@ -147,7 +152,14 @@ export const footer = {
     { label: "Industries We Support", href: "#work" },
     { label: "Contact", href: "#contact" },
   ],
-  services: ["Growth Strategy", "Creative Production", "Performance Marketing", "SEO & Local Search", "Websites & Landing Pages", "Social Content", "Lead Generation"],
+  services: ["Growth Strategy", "Creative Production", "Performance Marketing", "SEO & Local Search", "Websites & Landing Pages", "Social Content Systems", "Lead Generation", "App Development", "Google Ads", "Meta Ads", "Video Production", "AI Image Creation"],
+  education: {
+    eyebrow: "For schools & colleges",
+    heading: "Digital growth for educational institutions.",
+    text: "Help families discover what makes your school or college special. From admissions campaigns and campus storytelling to websites and local visibility, we connect the right marketing work to your institution's goals.",
+    links: ["Admissions campaigns", "School & college branding", "Campus photo & video", "Websites & local search"],
+    cta: "Discuss your institution",
+  },
   legal: [
     { label: "Privacy Policy", href: "#" },
     { label: "Terms & Conditions", href: "#" },

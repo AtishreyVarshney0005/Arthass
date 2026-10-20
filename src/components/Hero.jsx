@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
 
           <br/><br/>
-          <div className="visual-note"><span className="note-spark">✦</span> Built for education. Guided by your goals.</div>
+          <div className="visual-note"><span className="note-spark">✦</span> Built around your goals.</div>
         </div>
       </div>
       <div className="hero-corner" aria-hidden="true" />
