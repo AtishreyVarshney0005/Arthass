@@ -9,7 +9,7 @@ export const site = {
   primaryCta: { label: "Book a Growth Consultation", href: "#contact" },
   social: {
     facebook: "https://www.facebook.com/share/1VNBVPMx3A/",
-    instagram: "https://www.instagram.com/reel/Def9ShYz0dZ/?mdxt=MTJ5M2s5eGVhZm5lZA==",
+    instagram: "https://www.instagram.com/arthass.digital?exln=aHp3YmV4MXdjaHpn",
     linkedin: "https://www.linkedin.com/company/arthass/",
     youtube: "#", // [OFFICIAL YOUTUBE URL]
   },
@@ -26,17 +26,17 @@ export const nav = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
   { label: "About", href: "#approach" },
-  { label: "Our Work", href: "#work" },
+  { label: "Industries We Support", href: "#work" },
   { label: "Resources", href: "#faqs" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const hero = {
-  eyebrow: "STRATEGY • PRODUCTION • PERFORMANCE",
-  titleLead: "Digital growth built",
-  titleLine2: "around",
-  titleAccent: "your business goals.",
-  body: "ARTHASS brings strategy, creative production and performance marketing together to help institutions and businesses communicate clearly, reach relevant audiences and build a more measurable path from visibility to enquiry.",
+  eyebrow: "SCHOOLS & COLLEGES • STRATEGY • CREATIVE • GROWTH",
+  titleLead: "Digital growth for",
+  titleLine2: "schools &",
+  titleAccent: "colleges.",
+  body: "ARTHASS connects strategy, creative production and performance marketing to help educational institutions strengthen their digital presence, communicate their value and attract relevant audiences. We build connected marketing systems around your goals, not disconnected activities.",
   primaryCta: "Book a Growth Consultation",
   secondaryCta: "Explore Our Work",
   badges: ["Build Visibility", "Generate Demand", "Drive Growth"],
@@ -82,11 +82,11 @@ export const services = {
 };
 
 // The content pack says: do NOT invent client names, case studies or results.
-// So this section shows the sectors ARTHASS serves. When approved projects exist,
+// So this section shows the industries ARTHASS serves. When approved projects exist,
 // pass them to <Work projects={...} /> in the same shape (title, tags, image).
 export const industries = {
-  heading: "Our Work",
-  sub: "A closer look at the sectors we support—and the strategy, creative and digital capabilities we can bring to each.",
+  heading: "Industries We Support",
+  sub: "Education is our primary focus, especially schools and colleges. We also support selected organisations in hospitality, tourism and real estate with relevant strategy, creative and digital capabilities.",
   cta: "Discuss a project",
   items: [
     { title: "Education Growth Marketing", tags: "Strategy | Creative | Digital", image: "", scene: "education", tone: "violet" },
@@ -116,7 +116,7 @@ export const faqs = {
   heading: "Common questions",
   items: [
     { q: "What does ARTHASS do?", a: "ARTHASS connects marketing strategy, creative production and performance-led digital marketing. Depending on the agreed scope, this can include content, photo/video production, social media, SEO, paid campaigns, websites and enquiry workflows." },
-    { q: "Which industries does ARTHASS serve?", a: "Our initial focus is education, especially colleges and universities. We also plan to support selected businesses in hospitality and tourism, real estate, and other sectors where our capabilities match the requirement." },
+    { q: "Which industries does ARTHASS serve?", a: "Our primary focus is education, especially schools and colleges. We also support selected organisations in hospitality and tourism, real estate, and other sectors where our capabilities match the requirement." },
     { q: "Does ARTHASS guarantee leads or admissions?", a: "No responsible marketing partner can guarantee admissions or sales independently of market conditions, institutional reputation, pricing, offer quality, follow-up and other factors. We focus on clear strategy, agreed deliverables, tracking and continuous improvement." },
     { q: "Where does ARTHASS operate?", a: "Our initial focus is Mathura and Agra, with expansion towards NCR when appropriate. Remote collaboration may be possible depending on the project scope." },
     { q: "How can we start?", a: "Use the enquiry form to share your organisation, location, objective and current challenge. We can then determine whether a consultation is the right next step." },
@@ -144,7 +144,7 @@ export const footer = {
     { label: "Home", href: "#home" },
     { label: "Services", href: "#services" },
     { label: "About", href: "#approach" },
-    { label: "Our Work", href: "#work" },
+    { label: "Industries We Support", href: "#work" },
     { label: "Contact", href: "#contact" },
   ],
   services: ["Growth Strategy", "Creative Production", "Performance Marketing", "SEO & Local Search", "Websites & Landing Pages", "Social Content", "Lead Generation"],

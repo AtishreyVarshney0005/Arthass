@@ -116,10 +116,10 @@ export default function Work({ projects = industries.items }) {
                   className={`work-img tone-bg-${p.tone || "violet"}${p.image ? " has-image" : ""}`}
                   style={p.image ? { backgroundImage: `url(${p.image})` } : undefined}
                   role="img"
-                  aria-label={`${p.title} sector illustration`}
+                  aria-label={`${p.title} industry illustration`}
                 >
                   {!p.image && <IndustryArtwork scene={p.scene} />}
-                  <span className="work-label">Sector focus</span>
+                  <span className="work-label">Industry focus</span>
                   <span className="work-image-index">{String(index + 1).padStart(2, "0")}</span>
                 </div>
                 <div className="work-meta">
@@ -138,7 +138,7 @@ export default function Work({ projects = industries.items }) {
           </div>
         </div>
         <div className="work-cta" data-reveal="up">
-          <p>Have a goal in mind? Let's find the right way to support your sector.</p>
+          <p>Have a goal in mind? Let's find the right way to support your organisation.</p>
           <a className="btn btn-outline" href="#contact">
             {industries.cta} <Icon name="arrow" size={16} />
           </a>
