@@ -861,6 +861,13 @@ body { background: #fffdfa; }
 .work-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .work-card { border-radius: 20px; }
 .work-img { height: 224px; isolation: isolate; }
+.work-img.has-image {
+  height: auto;
+  aspect-ratio: 1.17 / 1;
+  background-color: #f7f5f0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .work-img::before,
 .work-img::after { z-index: 1; }
 .work-img.has-image::before,
